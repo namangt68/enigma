@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+__author__ = 'enitihas'
+
+import porcelain
+
+if __name__ == '__main__':
+    porcelain.main()
