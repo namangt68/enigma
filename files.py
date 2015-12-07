@@ -1,5 +1,3 @@
-__author__ = 'enitihas'
-
 import os
 import fnmatch
 import config
