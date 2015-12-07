@@ -7,9 +7,6 @@ from pathlib import Path
 import binascii
 from files import get_all_files
 
-__author__ = 'enitihas & swappy'
-
-
 def get_git_dir():
     """
     Returns the full path of the .eni repository in which the current directory is being tracked.
