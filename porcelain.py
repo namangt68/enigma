@@ -1,5 +1,3 @@
-__author__ = 'enitihas & swappy'
-
 from plumber import *
 import getopt
 import os
