@@ -25,8 +25,8 @@ Maybe you wanted to say 'eni add .'?""")
     if add_all:
         all_files = get_all_files(repo_dir)
         for file in all_files:
-            git_write_hash_file(file)
-            git_update_index(file)
+            eni_write_hash_file(file)
+            eni_update_index(file)
     else:
         cwd = os.getcwd()
         abs_path_args = [os.path.join(cwd, x) for x in args]
@@ -36,33 +36,33 @@ Maybe you wanted to say 'eni add .'?""")
             if os.path.isdir(abs_name):
                 all_files = get_all_files(abs_name)
                 for file in all_files:
-                    git_write_hash_file(file)
-                    git_update_index(file)
+                    eni_write_hash_file(file)
+                    eni_update_index(file)
             else:
-                git_write_hash_file(abs_name)
-                git_update_index(abs_name)
+                eni_write_hash_file(abs_name)
+                eni_update_index(abs_name)
 
 
 def cmd_init(args):
     if args:
-        git_init(args)
+        eni_init(args)
     else:
-        git_init()
+        eni_init()
 
 def cmd_commit(args):
     opts , args = getopt.getopt(args, '', ["message="])
     for option in opts:
         if option[0] == '--message=':
-            git_commit(option[1])
+            eni_commit(option[1])
             return None
     commit_file = tempfile.NamedTemporaryFile(mode='r')
     sb.call([config.editor,commit_file.name])
     commit_message = commit_file.read()
     commit_file.close()
-    git_commit(commit_message)
+    eni_commit(commit_message)
 
 def cmd_status(args):
-    modified , added, untracked = git_changed_files()
+    modified , added, untracked = eni_changed_files()
     print("On branch {}\n".format(curr_branch_name))
     #TODO: print "Initial Commit" here if no prior commit done
     if added:
@@ -106,8 +106,9 @@ def main():
         if command.startswith(argv[0]):
             commands[command](argv[1:])
             sys.exit(0)
-    print("Not a valid git command {}".format(argv[1]))
+    print("Not a valid eni command {}".format(argv[1]))
 
 if __name__ == '__main__':
-    config.ignore_list = read_file(os.path.join(git_dir,'.eniignore')).strip().split('\n') + ['.eni']
+    config.ignore_list = read_file(os.path.join(eni_dir,'.eniignore')).strip().split('\n') + ['.eni']
     main()
+
