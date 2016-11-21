@@ -9,6 +9,8 @@ Enigma is a version controlling system (VCS) built in python.
 
 - Run enigma by executing 'eni' file. 
 `./eni`
+## Video Guide For Developers
+[![Enigma Description](https://img.youtube.com/vi/mzTYNjGC190/0.jpg)](https://www.youtube.com/watch?v=mzTYNjGC190)
 
 ###Learning Outcomes:
 
