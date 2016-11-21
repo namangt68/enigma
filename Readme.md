@@ -35,7 +35,6 @@ Enigma is a version controlling system (VCS) built in python.
 
 ###To do
 
-- Build Sphinx python docs for enigma.
 - Put project on the python package index (PyPi). Then enigma can be installed from there using 
 `pip install enigma`.
 
