@@ -1,4 +1,5 @@
-:star2: ##Enigma
+:star2: 
+##Enigma
 Enigma is a version controlling system (VCS) built in python.
 
 ###Installation
