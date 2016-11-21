@@ -9,13 +9,13 @@ Enigma is a version controlling system (VCS) built in python.
 
 ###Enigma commands
 
-- `eni init`
+- `./eni init`
 
-- `eni add .` (Use filename instead of '.' for adding any file)
+- `./eni add .` (Use filename instead of '.' for adding any file)
 
-- `eni status`
+- `./eni status`
 
-- `eni commit`
+- `./eni commit`
 
 ###Video Description
 
