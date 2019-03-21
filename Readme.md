@@ -1,13 +1,13 @@
-##:star2:Enigma
+## :star2: Enigma
 Enigma is a version controlling system (VCS) built in python.
 
-###Installation
+### Installation
 
 - Clone the repository: `git clone https://github.com/namangt68/enigma.git`
 
 - cd to enigma directory and run enigma by executing 'eni' file: `./eni`
 
-###Enigma commands
+### Enigma commands
 
 - `./eni init`
 
@@ -17,11 +17,11 @@ Enigma is a version controlling system (VCS) built in python.
 
 - `./eni commit`
 
-###Video Description
+### Video Description
 
 [![Enigma Description](https://img.youtube.com/vi/mzTYNjGC190/0.jpg)](https://www.youtube.com/watch?v=mzTYNjGC190)
 
-###Learning Outcomes
+### Learning Outcomes
 
 - How a version control system works
 
@@ -33,15 +33,15 @@ Enigma is a version controlling system (VCS) built in python.
 
 - How to match filename pattern
 
-###To do
+### To do
 
 - Put project on the python package index (PyPi). Then enigma can be installed from there using 
 `pip install enigma`.
 
-###Creators
+### Creators
 
 This project was build under CS307 System Practicum course at IIT Mandi by Abhishek Pandey, Naman Gupta and Swapnil Sharma.
 
-###License
+### License
 
 [MIT License](LICENSE).
